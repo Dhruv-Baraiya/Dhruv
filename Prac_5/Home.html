@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="Home.html" class="nav__link active-link"> Home Page </a>
+                </li>
+                <li class="nav__item">
+                    <a href="Education.html" target="_self" class="nav__link "> Education </a>
+                </li>
+                <li class="nav__item">
+                    <a href="Experience.html" target="_self" class="nav__link"> Experience </a>
+                </li>
+                <li class="nav__item">
+                    <a href="Skill.html" target="_self" class="nav__link"> Skills </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="section1">
+            <div class="section1-part1">
+                <h2>Name</h2><br>
+                <select class="form-select">
+                    <option selected disabled value="">Select</option>
+                    <option value="1">Mr.</option>
+                    <option value="2">Ms.</option>
+                    <option value="3">Mrs.</option>
+                </select>
+                <input type="text" placeholder="First name" class="form-control">
+                <input type="text" placeholder="Middle name" class="form-control">
+                <input type="text" placeholder="Last name" class="form-control">
+            </div><br>
+            <div class="parts1-2">
+                <div class="section1-part2">
+                    <h2>Email</h2><br>
+                    <input type="email" class="mail" placeholder="Email">
+                </div>
+                <div class="section1-part3">
+                    <h2>Current Post</h2><br>
+                    <input type="text" class="post" placeholder="Current Post">
+                </div>
+            </div>
+        </div>
+        <div class="section2">
+            <h2 class="Photo">Profile</h2><br>
+            <img src="Image/PROFILE.png" alt="">
+            <div class="round">
+                <input type="file">
+                <i class="fa fa-camera" style="color: #fff;"></i>
+            </div>
+        </div>
+    </div>
+    <div class="addrs">
+        <div class="p1">
+            <div class="sec-1">
+                <div class="sec-1-1">
+                    <h2>Address</h2><br>
+                    <h3>Line-1</h3><br>
+                    <input type="text" placeholder="1234 Main Street" class="l1"><br><br>
+                    <h3>Line-2</h3><br>
+                    <input type="text" placeholder="Apartment, Studio or floor" class="l1"><br><br>
+                </div>
+                <div class="sec-1-2">
+                    <div class="CSC">
+                        <h3>City</h3><br>
+                        <input type="text" placeholder="City" class="city">
+                    </div>
+                    <div class="CSC">
+                        <h3>State</h3><br>
+                        <select class="state">
+                            <option selected disabled value="">Select</option>
+                            <option value="1">Gujarat</option>
+                            <option value="2">Rajsthan</option>
+                            <option value="3">Maharastra</option>
+                        </select>
+                    </div>
+                    <div class="CSC">
+                        <h3>Country</h3><br>
+                        <select class="state">
+                            <option selected disabled value="">Select</option>
+                            <option value="1">India</option>
+                        </select>
+                    </div>
+                </div><br>
+                <div class="sec-1-3">
+                    <div class="Zi">
+                        <h3>Zip</h3><br>
+                        <input type="text" placeholder="Postal Code" inputmode="numeric" class="zip">
+                    </div>
+                    <div>
+                        <h3>CV Upload</h3><br>
+                        <input type="file" class="Upload">
+                    </div>
+                </div>
+            </div>
+            <div class="sec-2">
+                <h2>About Text</h2><br>
+                <textarea placeholder="About Text" cols="30" rows="8" class="About"></textarea>
+            </div>
+        </div><br>
+        <div class="END">
+            <Button class="save">Save</Button>
+            <button class="cancel">Cancel</button>
+        </div>
+    </div>
+</body>
+
+</html>
