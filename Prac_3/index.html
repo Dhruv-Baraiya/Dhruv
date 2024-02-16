@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ng-app="todoApp">
+    <div class="container" ng-controller="ctrl">
+        <h2>TODO List</h2>
+        <form ng-submit="addTaskList()" method="#">
+            <input type="text" name="addTask" class="addTask" placeholder="Add Task" ng-model="newTask">
+            <button type="submit" class="btn">Add Task</button>
+        </form>
+        <div class="statusbar" >
+            <p >{{remaining()}} of {{taskList.length}} remaining</p>
+            <button class="btn" ng-click="clearAll()">Clear All</button>
+            <button class="btn" ng-click="clearCompleted()">Clear Completed</button>
+        </div>
+        <div class="task">
+            <ul>
+                <li ng-repeat="task in taskList track by $index" >
+                    <input type="checkbox" name="t{{$index}}" id="t{{$index}}"  ng-model="task.status" ng-change="check()" required>{{task.taskDesc}}
+                    <span class="delete" name="t{{$index}}" id="t{{$index}}" ng-click="remove($index)">&#10006;</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+<script src="Js/angular.min.js"></script>
+<script src="Js/app.js"></script>
+
+</html> 
